@@ -29,9 +29,15 @@ This recipe shows how to debug a Ruby on Rails (without jRuby) application using
     $: which bundle
     /path/to/rubygem/bin/bundle
     # replace 'bin' with 'wrappers' in launch.json, so it will be '/path/to/rubygem/wrappers/bundle'. See below the StackOverflow link for a reference for RVM users.
+    # for docker, execute the command: 
+    # docker-compose run web where bundle
+    # or exec it if docker already running
+    # docker-compose exec web where bundle
   
     $: bundle show ruby-debug-ide
     /path/to/rubygem/gems/ruby-debug-ide-x.x.x
+    # for docker, exec the command:
+    # docker-compose exec web bundle show ruby-debug-ide
    
     $: which rspec
     /path/to/rubygem/bin/rspec
