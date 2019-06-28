@@ -221,7 +221,7 @@ Reference [StackOverflow#26247926](https://stackoverflow.com/questions/26247926/
         web:
             build:
                 context: .
-            command: bundle exec rdebug-ide --debug --host 0.0.0.0 --port 1234 -- rails s -p 3000 -b 0.0.0.0
+            command: bundle exec rdebug-ide --debug --host 0.0.0.0 --port 1234 -- rails s -p 3000 -b 0.0.0.0 # should be bin/rails
             volumes:
                 - .:/app
             ports:
